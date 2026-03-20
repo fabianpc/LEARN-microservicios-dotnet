@@ -3,8 +3,8 @@
 Agrega los siguientes paquetes de Nuget en tu proyecto **AddAdult** y después ejecútalo.
 
 ```bash
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.16
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.16
 
 dotnet run
 ```
