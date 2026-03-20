@@ -1,6 +1,9 @@
 @GetAdults_HostAddress = http://localhost:5108
+@Docker_HostAddress = http://localhost:8080
 
-GET {{GetAdults_HostAddress}}/weatherforecast/
+GET {{GetAdults_HostAddress}}/Adults/
 Accept: application/json
 
 ###
+GET {{Docker_HostAddress}}/Adults/
+Accept: application/json
