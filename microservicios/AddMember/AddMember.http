@@ -1,0 +1,11 @@
+@AddMember_HostAddress = http://localhost:5222
+
+### Request adult
+POST {{AddMember_HostAddress}}/addmember?name=Jenny&lastname=Moreno&birthyear=1971
+Content-Type: application/json
+Accept: application/json
+
+### Request children
+POST {{AddMember_HostAddress}}/addmember?name=Santiago&lastname=Vega&birthyear=2016
+Content-Type: application/json
+Accept: application/json
