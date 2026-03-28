@@ -35,4 +35,21 @@ Crea un archivo **docker-compose.yml** dentro de tu carpeta de **microservicios*
         - "5000:8080"
 ```
 
+Crear la red para que se comuniquen los contenedores
+
+```shell
+docker network create red-db
+```
+
 ¡Ejecuta Docker Compose!
+
+```shell
+docker compose up
+```
+Para utilizar la base de datos dentro de un contenedor se requiere cambiar localhost por el nombre del host en la red, adicionalmente se debe utilizar el parametro network en el comando de arranque, por ejemplo:
+
+```shell
+docker run -p 5000:8080  --name microservicios-getAdults-1 --network red-db -d getadults
+```
+
+

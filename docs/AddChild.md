@@ -8,8 +8,9 @@ dotnet add package Microsoft.Extensions.Configuration
 dotnet add package Microsoft.Extensions.Configuration.FileExtensions
 dotnet add package Microsoft.Extensions.Configuration.Json
 dotnet add package Microsoft.Extensions.Hosting
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.16
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.16
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.16
 
 dotnet run
 ```
@@ -184,4 +185,10 @@ namespace AddChild.Models
         public string ImageUrl { get; set; }
     }
 }
+```
+Para inicializar la tabla en la base de datos se requiere ejecutar:
+
+```bash
+dotnet ef migrations add InitialCreate
+dotnet ef database update
 ```

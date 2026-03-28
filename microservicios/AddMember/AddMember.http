@@ -1,11 +1,24 @@
 @AddMember_HostAddress = http://localhost:5222
+@Docker_HostAddress = http://localhost:8080
 
 ### Request adult
-POST {{AddMember_HostAddress}}/addmember?name=Jenny&lastname=Moreno&birthyear=1971
+POST {{AddMember_HostAddress}}/addmember?name=Fabian&lastname=Palacios&birthyear=1971
 Content-Type: application/json
 Accept: application/json
 
 ### Request children
-POST {{AddMember_HostAddress}}/addmember?name=Santiago&lastname=Vega&birthyear=2016
+POST {{AddMember_HostAddress}}/addmember?name=Whitney&lastname=Torres&birthyear=2019
+Content-Type: application/json
+Accept: application/json
+
+### Docker
+
+### Request adult
+POST {{Docker_HostAddress}}/addmember?name=Clemencia&lastname=Herrera&birthyear=1971
+Content-Type: application/json
+Accept: application/json
+
+### Request children
+POST {{Docker_HostAddress}}/addmember?name=Santiago&lastname=TorrePalacios&birthyear=2015
 Content-Type: application/json
 Accept: application/json
